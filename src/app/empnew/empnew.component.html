@@ -1,0 +1,15 @@
+<form #form="ngForm" (submit)="onsubmit(form)" autocomplete="off">
+<div class="form-group">
+
+    <label>Employee Name</label>
+    <input type="text" name="EmployeeName" #EmployeeName="ngModel" [(ngModel)]="service.formData.EmployeeName" class="form-control">
+    <label>Employee Age</label>
+    <input type="text" name="AGE" #Age="ngModel" [(ngModel)]="service.formData.Age" class="form-control">
+    <label>Employee Salary</label>
+    <input type="text"  name="Salary" #Salary="ngModel" [(ngModel)]="service.formData.Salary" class="form-control">
+</div>
+<div class="form-control">
+    <button type="submit" class="btn btn-lg btn-block">Submit</button>
+    
+</div>
+</form>
