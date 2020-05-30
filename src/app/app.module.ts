@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http'
 import { EmpcurdServiceService } from './Services/empcurd-service.service';
 import { FormsModule } from '@angular/forms';
 import { RxjsoperatorsComponent } from './rxjsoperators/rxjsoperators.component';
+
+import {ChartsModule} from 'ng2-charts';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,8 @@ import { RxjsoperatorsComponent } from './rxjsoperators/rxjsoperators.component'
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ChartsModule
   ],
   providers: [EmpcurdServiceService],
   bootstrap: [AppComponent]
